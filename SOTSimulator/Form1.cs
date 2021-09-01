@@ -37,7 +37,17 @@ namespace SOTSimulator
             this.txtRunDelay.Text = aModel.runDelay.ToString();
             this.txtUseDelay.Text = aModel.useDelay.ToString();
             this.txtMouseDistance.Text = aModel.mouseDistance.ToString();
-
+            this.txtDgKeyStroke.Text = aModel.dgKeyStroke.ToString();
+            this.txtSwitchKeyStroke.Text = aModel.switchKeyStroke.ToString();
+            this.txtSwitchDelay.Text = aModel.switchDelay.ToString();
+            this.txtFireKeyStroke.Text = aModel.fireKeyStroke.ToString();
+            this.txtAimKeyStroke.Text = aModel.aimKeyStroke.ToString();
+            this.txtAdsDelay.Text = aModel.adsDelay.ToString();
+            this.txtBhopStateKeyStroke.Text = aModel.bhopStateKeyStroke.ToString();
+            this.txtCannonToggleKeyStroke.Text = aModel.CannonStateKeyStroke.ToString();
+            this.txtReloadDelay.Text = aModel.reloadDelay.ToString();
+            this.txtReloadKeyStroke.Text = aModel.reloadKeyStroke.ToString();
+            this.txtAutoLootToggleKeyStroke.Text = aModel.autoLootKeyStroke.ToString();
         }
 
         public void readValues(Model aModel)
@@ -90,6 +100,73 @@ namespace SOTSimulator
             aModel.runDelay = Convert.ToInt32(this.txtRunDelay.Text);
             aModel.useDelay = Convert.ToInt32(this.txtUseDelay.Text);
             aModel.mouseDistance = Convert.ToInt32(this.txtMouseDistance.Text);
+            try
+            {
+                aModel.dgKeyStroke = Convert.ToInt32(this.txtDgKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.dgKeyStroke = Convert.ToInt32(this.txtDgKeyStroke.Text, 16);
+            }
+            try
+            {
+                aModel.switchKeyStroke = Convert.ToInt32(this.txtSwitchKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.switchKeyStroke = Convert.ToInt32(this.txtSwitchKeyStroke.Text, 16);
+            }
+            aModel.switchDelay = Convert.ToInt32(this.txtSwitchDelay.Text);
+            try
+            {
+                aModel.fireKeyStroke = Convert.ToInt32(this.txtFireKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.fireKeyStroke = Convert.ToInt32(this.txtFireKeyStroke.Text, 16);
+            }
+            try
+            {
+                aModel.aimKeyStroke = Convert.ToInt32(this.txtAimKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.aimKeyStroke = Convert.ToInt32(this.txtAimKeyStroke.Text, 16);
+            }
+            aModel.adsDelay = Convert.ToInt32(this.txtAdsDelay.Text);
+            try
+            {
+                aModel.bhopStateKeyStroke = Convert.ToInt32(this.txtBhopStateKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.bhopStateKeyStroke = Convert.ToInt32(this.txtBhopStateKeyStroke.Text, 16);
+            }
+            try
+            {
+                aModel.reloadKeyStroke = Convert.ToInt32(this.txtReloadKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.reloadKeyStroke = Convert.ToInt32(this.txtReloadKeyStroke.Text, 16);
+            }
+            try
+            {
+                aModel.CannonStateKeyStroke = Convert.ToInt32(this.txtCannonToggleKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.CannonStateKeyStroke = Convert.ToInt32(this.txtCannonToggleKeyStroke.Text, 16);
+            }
+            aModel.reloadDelay = Convert.ToInt32(this.txtReloadDelay.Text);
+            try
+            {
+                aModel.autoLootKeyStroke = Convert.ToInt32(this.txtAutoLootToggleKeyStroke.Text);
+            }
+            catch (Exception useless)
+            {
+                aModel.autoLootKeyStroke = Convert.ToInt32(this.txtAutoLootToggleKeyStroke.Text, 16);
+            }
         }
         #endregion
 
@@ -128,7 +205,6 @@ namespace SOTSimulator
                 lblJuggleState.ForeColor = Color.Red;
             }
         }
-        #endregion
 
         private void btnInfoSwordLunge_Click(object sender, EventArgs e)
         {
@@ -140,5 +216,86 @@ namespace SOTSimulator
             MessageBox.Show("1. Sleep for 50ms\n->Drop item\n->Look down\n->Drop delay(should be shorter)\n->Start sprinting\n->Run delay\n->Press use\n->Look up\n->Use delay(should be longer)\n->Stop holding use & sprint\n\nMouse distance determines how far down/up to look\n\nMouse speed determines lenght of mouse event.");
 
         }
+
+        private void btnDoubleGunToggle_Click(object sender, EventArgs e)
+        {
+            if (Script.toggleState("DoubleGun"))
+            {
+                lblDgState.Text = "on";
+                lblDgState.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblDgState.Text = "off";
+                lblDgState.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnBhopToggle_Click(object sender, EventArgs e)
+        {
+            if (Script.toggleState("Bhop"))
+            {
+                lblBhopToggle.Text = "on";
+                lblBhopToggle.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblBhopToggle.Text = "off";
+                lblBhopToggle.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnInfoDoubleGun_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("1. Switch weapon\n->Sprint\n->Switch delay\n->ADS\n->Aim delay\n->Fire");
+        }
+
+        private void btnAntiAFKStateToggle_Click(object sender, EventArgs e)
+        {
+            if (Script.toggleState("AFK"))
+            {
+                lblAntiAFKStateToggle.Text = "on";
+                lblAntiAFKStateToggle.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblAntiAFKStateToggle.Text = "off";
+                lblAntiAFKStateToggle.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnAutoCannonStateToggle_Click(object sender, EventArgs e)
+        {
+            if (Script.toggleState("Cannon"))
+            {
+                lblAutoCannonStateToggle.Text = "on";
+                lblAutoCannonStateToggle.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblAutoCannonStateToggle.Text = "off";
+                lblAutoCannonStateToggle.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnAutoLootToggleState_Click(object sender, EventArgs e)
+        {
+            if (Script.toggleState("Loot"))
+            {
+                lblAutoLootToggleState.Text = "on";
+                lblAutoLootToggleState.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblAutoLootToggleState.Text = "off";
+                lblAutoLootToggleState.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnDefault_Click(object sender, EventArgs e)
+        {
+            setValues(new Model());
+        }
+        #endregion
     }
 }

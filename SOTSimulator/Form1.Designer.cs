@@ -60,10 +60,44 @@ namespace SOTSimulator
             this.txtRunDelay = new System.Windows.Forms.TextBox();
             this.txtUseDelay = new System.Windows.Forms.TextBox();
             this.txtMouseDistance = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnInfoSwordLunge = new System.Windows.Forms.Button();
             this.btnInfoJuggle = new System.Windows.Forms.Button();
             this.lblReference = new System.Windows.Forms.Label();
+            this.btnDoubleGunToggle = new System.Windows.Forms.Button();
+            this.lblDgState = new System.Windows.Forms.Label();
+            this.txtDgKeyStroke = new System.Windows.Forms.TextBox();
+            this.lblDgKeyStroke = new System.Windows.Forms.Label();
+            this.lblSwitchKeyStroke = new System.Windows.Forms.Label();
+            this.txtSwitchKeyStroke = new System.Windows.Forms.TextBox();
+            this.txtSwitchDelay = new System.Windows.Forms.TextBox();
+            this.lblSwitchDelay = new System.Windows.Forms.Label();
+            this.lblFireKeyStroke = new System.Windows.Forms.Label();
+            this.txtFireKeyStroke = new System.Windows.Forms.TextBox();
+            this.lblAimKeyStroke = new System.Windows.Forms.Label();
+            this.txtAimKeyStroke = new System.Windows.Forms.TextBox();
+            this.txtAdsDelay = new System.Windows.Forms.TextBox();
+            this.lblAdsDelay = new System.Windows.Forms.Label();
+            this.btnInfoDoubleGun = new System.Windows.Forms.Button();
+            this.lblBhopToggle = new System.Windows.Forms.Label();
+            this.btnBhopToggle = new System.Windows.Forms.Button();
+            this.lblBhopStateKeyStroke = new System.Windows.Forms.Label();
+            this.txtBhopStateKeyStroke = new System.Windows.Forms.TextBox();
+            this.lblAntiAFKStateToggle = new System.Windows.Forms.Label();
+            this.btnAntiAFKStateToggle = new System.Windows.Forms.Button();
+            this.lblAutoCannonStateToggle = new System.Windows.Forms.Label();
+            this.btnAutoCannonStateToggle = new System.Windows.Forms.Button();
+            this.txtReloadDelay = new System.Windows.Forms.TextBox();
+            this.lblReloadDelay = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblReloadKeyStroke = new System.Windows.Forms.Label();
+            this.txtReloadKeyStroke = new System.Windows.Forms.TextBox();
+            this.lblCannonToggleKeyStroke = new System.Windows.Forms.Label();
+            this.txtCannonToggleKeyStroke = new System.Windows.Forms.TextBox();
+            this.lblAutoLootToggleState = new System.Windows.Forms.Label();
+            this.btnAutoLootToggleState = new System.Windows.Forms.Button();
+            this.lblLootToggle = new System.Windows.Forms.Label();
+            this.txtAutoLootToggleKeyStroke = new System.Windows.Forms.TextBox();
+            this.btnDefault = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLungeToggle
@@ -82,7 +116,7 @@ namespace SOTSimulator
             // 
             this.lblLungeState.AutoSize = true;
             this.lblLungeState.ForeColor = System.Drawing.Color.Red;
-            this.lblLungeState.Location = new System.Drawing.Point(128, 31);
+            this.lblLungeState.Location = new System.Drawing.Point(108, 28);
             this.lblLungeState.Name = "lblLungeState";
             this.lblLungeState.Size = new System.Drawing.Size(22, 15);
             this.lblLungeState.TabIndex = 1;
@@ -127,16 +161,16 @@ namespace SOTSimulator
             // lblKeyStroke
             // 
             this.lblKeyStroke.AutoSize = true;
-            this.lblKeyStroke.Location = new System.Drawing.Point(133, 124);
+            this.lblKeyStroke.Location = new System.Drawing.Point(587, 56);
             this.lblKeyStroke.Name = "lblKeyStroke";
-            this.lblKeyStroke.Size = new System.Drawing.Size(26, 15);
+            this.lblKeyStroke.Size = new System.Drawing.Size(77, 15);
             this.lblKeyStroke.TabIndex = 9;
-            this.lblKeyStroke.Text = "Key";
+            this.lblKeyStroke.Text = "Lunge toggle";
             // 
             // lblListenFrequency
             // 
             this.lblListenFrequency.AutoSize = true;
-            this.lblListenFrequency.Location = new System.Drawing.Point(217, 216);
+            this.lblListenFrequency.Location = new System.Drawing.Point(133, 394);
             this.lblListenFrequency.Name = "lblListenFrequency";
             this.lblListenFrequency.Size = new System.Drawing.Size(99, 15);
             this.lblListenFrequency.TabIndex = 8;
@@ -145,7 +179,7 @@ namespace SOTSimulator
             // txtKeyStroke
             // 
             this.txtKeyStroke.BackColor = System.Drawing.Color.White;
-            this.txtKeyStroke.Location = new System.Drawing.Point(27, 116);
+            this.txtKeyStroke.Location = new System.Drawing.Point(481, 48);
             this.txtKeyStroke.Name = "txtKeyStroke";
             this.txtKeyStroke.Size = new System.Drawing.Size(100, 23);
             this.txtKeyStroke.TabIndex = 7;
@@ -153,7 +187,7 @@ namespace SOTSimulator
             // 
             // txtListenFrequency
             // 
-            this.txtListenFrequency.Location = new System.Drawing.Point(111, 212);
+            this.txtListenFrequency.Location = new System.Drawing.Point(27, 390);
             this.txtListenFrequency.Name = "txtListenFrequency";
             this.txtListenFrequency.Size = new System.Drawing.Size(100, 23);
             this.txtListenFrequency.TabIndex = 6;
@@ -162,7 +196,7 @@ namespace SOTSimulator
             // btnSaveSettings
             // 
             this.btnSaveSettings.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSaveSettings.Location = new System.Drawing.Point(318, 212);
+            this.btnSaveSettings.Location = new System.Drawing.Point(250, 373);
             this.btnSaveSettings.Name = "btnSaveSettings";
             this.btnSaveSettings.Size = new System.Drawing.Size(133, 23);
             this.btnSaveSettings.TabIndex = 10;
@@ -174,7 +208,7 @@ namespace SOTSimulator
             // 
             this.lblJuggleState.AutoSize = true;
             this.lblJuggleState.ForeColor = System.Drawing.Color.Red;
-            this.lblJuggleState.Location = new System.Drawing.Point(318, 31);
+            this.lblJuggleState.Location = new System.Drawing.Point(331, 28);
             this.lblJuggleState.Name = "lblJuggleState";
             this.lblJuggleState.Size = new System.Drawing.Size(22, 15);
             this.lblJuggleState.TabIndex = 12;
@@ -184,7 +218,7 @@ namespace SOTSimulator
             // 
             this.btnJuggleToggle.BackColor = System.Drawing.Color.LightGray;
             this.btnJuggleToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnJuggleToggle.Location = new System.Drawing.Point(217, 14);
+            this.btnJuggleToggle.Location = new System.Drawing.Point(250, 14);
             this.btnJuggleToggle.Name = "btnJuggleToggle";
             this.btnJuggleToggle.Size = new System.Drawing.Size(75, 37);
             this.btnJuggleToggle.TabIndex = 11;
@@ -195,7 +229,7 @@ namespace SOTSimulator
             // txtMoveKeyStroke
             // 
             this.txtMoveKeyStroke.BackColor = System.Drawing.Color.White;
-            this.txtMoveKeyStroke.Location = new System.Drawing.Point(217, 57);
+            this.txtMoveKeyStroke.Location = new System.Drawing.Point(481, 106);
             this.txtMoveKeyStroke.Name = "txtMoveKeyStroke";
             this.txtMoveKeyStroke.Size = new System.Drawing.Size(100, 23);
             this.txtMoveKeyStroke.TabIndex = 13;
@@ -204,7 +238,7 @@ namespace SOTSimulator
             // txtDropKeyStroke
             // 
             this.txtDropKeyStroke.BackColor = System.Drawing.Color.White;
-            this.txtDropKeyStroke.Location = new System.Drawing.Point(217, 87);
+            this.txtDropKeyStroke.Location = new System.Drawing.Point(481, 251);
             this.txtDropKeyStroke.Name = "txtDropKeyStroke";
             this.txtDropKeyStroke.Size = new System.Drawing.Size(100, 23);
             this.txtDropKeyStroke.TabIndex = 14;
@@ -213,7 +247,7 @@ namespace SOTSimulator
             // txtSprintKeyStroke
             // 
             this.txtSprintKeyStroke.BackColor = System.Drawing.Color.White;
-            this.txtSprintKeyStroke.Location = new System.Drawing.Point(217, 116);
+            this.txtSprintKeyStroke.Location = new System.Drawing.Point(481, 280);
             this.txtSprintKeyStroke.Name = "txtSprintKeyStroke";
             this.txtSprintKeyStroke.Size = new System.Drawing.Size(100, 23);
             this.txtSprintKeyStroke.TabIndex = 15;
@@ -222,7 +256,7 @@ namespace SOTSimulator
             // txtUseKeyStroke
             // 
             this.txtUseKeyStroke.BackColor = System.Drawing.Color.White;
-            this.txtUseKeyStroke.Location = new System.Drawing.Point(217, 145);
+            this.txtUseKeyStroke.Location = new System.Drawing.Point(481, 309);
             this.txtUseKeyStroke.Name = "txtUseKeyStroke";
             this.txtUseKeyStroke.Size = new System.Drawing.Size(100, 23);
             this.txtUseKeyStroke.TabIndex = 16;
@@ -231,16 +265,16 @@ namespace SOTSimulator
             // lblMoveKeyStroke
             // 
             this.lblMoveKeyStroke.AutoSize = true;
-            this.lblMoveKeyStroke.Location = new System.Drawing.Point(323, 65);
+            this.lblMoveKeyStroke.Location = new System.Drawing.Point(587, 114);
             this.lblMoveKeyStroke.Name = "lblMoveKeyStroke";
-            this.lblMoveKeyStroke.Size = new System.Drawing.Size(26, 15);
+            this.lblMoveKeyStroke.Size = new System.Drawing.Size(78, 15);
             this.lblMoveKeyStroke.TabIndex = 17;
-            this.lblMoveKeyStroke.Text = "Key";
+            this.lblMoveKeyStroke.Text = "Juggle toggle";
             // 
             // lblDropKeyStroke
             // 
             this.lblDropKeyStroke.AutoSize = true;
-            this.lblDropKeyStroke.Location = new System.Drawing.Point(323, 95);
+            this.lblDropKeyStroke.Location = new System.Drawing.Point(587, 259);
             this.lblDropKeyStroke.Name = "lblDropKeyStroke";
             this.lblDropKeyStroke.Size = new System.Drawing.Size(55, 15);
             this.lblDropKeyStroke.TabIndex = 18;
@@ -249,7 +283,7 @@ namespace SOTSimulator
             // lblSprintKeyStroke
             // 
             this.lblSprintKeyStroke.AutoSize = true;
-            this.lblSprintKeyStroke.Location = new System.Drawing.Point(323, 124);
+            this.lblSprintKeyStroke.Location = new System.Drawing.Point(587, 288);
             this.lblSprintKeyStroke.Name = "lblSprintKeyStroke";
             this.lblSprintKeyStroke.Size = new System.Drawing.Size(60, 15);
             this.lblSprintKeyStroke.TabIndex = 19;
@@ -258,7 +292,7 @@ namespace SOTSimulator
             // lblUseKeyStroke
             // 
             this.lblUseKeyStroke.AutoSize = true;
-            this.lblUseKeyStroke.Location = new System.Drawing.Point(323, 153);
+            this.lblUseKeyStroke.Location = new System.Drawing.Point(587, 317);
             this.lblUseKeyStroke.Name = "lblUseKeyStroke";
             this.lblUseKeyStroke.Size = new System.Drawing.Size(48, 15);
             this.lblUseKeyStroke.TabIndex = 20;
@@ -267,7 +301,7 @@ namespace SOTSimulator
             // lblDropDelay
             // 
             this.lblDropDelay.AutoSize = true;
-            this.lblDropDelay.Location = new System.Drawing.Point(496, 65);
+            this.lblDropDelay.Location = new System.Drawing.Point(356, 65);
             this.lblDropDelay.Name = "lblDropDelay";
             this.lblDropDelay.Size = new System.Drawing.Size(65, 15);
             this.lblDropDelay.TabIndex = 21;
@@ -276,7 +310,7 @@ namespace SOTSimulator
             // lblMouseSpeed
             // 
             this.lblMouseSpeed.AutoSize = true;
-            this.lblMouseSpeed.Location = new System.Drawing.Point(496, 95);
+            this.lblMouseSpeed.Location = new System.Drawing.Point(356, 95);
             this.lblMouseSpeed.Name = "lblMouseSpeed";
             this.lblMouseSpeed.Size = new System.Drawing.Size(78, 15);
             this.lblMouseSpeed.TabIndex = 22;
@@ -285,7 +319,7 @@ namespace SOTSimulator
             // lblRunDelay
             // 
             this.lblRunDelay.AutoSize = true;
-            this.lblRunDelay.Location = new System.Drawing.Point(496, 124);
+            this.lblRunDelay.Location = new System.Drawing.Point(356, 124);
             this.lblRunDelay.Name = "lblRunDelay";
             this.lblRunDelay.Size = new System.Drawing.Size(60, 15);
             this.lblRunDelay.TabIndex = 23;
@@ -294,7 +328,7 @@ namespace SOTSimulator
             // lblUseDelay
             // 
             this.lblUseDelay.AutoSize = true;
-            this.lblUseDelay.Location = new System.Drawing.Point(496, 153);
+            this.lblUseDelay.Location = new System.Drawing.Point(356, 153);
             this.lblUseDelay.Name = "lblUseDelay";
             this.lblUseDelay.Size = new System.Drawing.Size(58, 15);
             this.lblUseDelay.TabIndex = 24;
@@ -303,7 +337,7 @@ namespace SOTSimulator
             // lblMouseDistance
             // 
             this.lblMouseDistance.AutoSize = true;
-            this.lblMouseDistance.Location = new System.Drawing.Point(496, 182);
+            this.lblMouseDistance.Location = new System.Drawing.Point(356, 182);
             this.lblMouseDistance.Name = "lblMouseDistance";
             this.lblMouseDistance.Size = new System.Drawing.Size(91, 15);
             this.lblMouseDistance.TabIndex = 25;
@@ -312,7 +346,7 @@ namespace SOTSimulator
             // txtDropDelay
             // 
             this.txtDropDelay.BackColor = System.Drawing.Color.White;
-            this.txtDropDelay.Location = new System.Drawing.Point(390, 57);
+            this.txtDropDelay.Location = new System.Drawing.Point(250, 57);
             this.txtDropDelay.Name = "txtDropDelay";
             this.txtDropDelay.Size = new System.Drawing.Size(100, 23);
             this.txtDropDelay.TabIndex = 26;
@@ -321,7 +355,7 @@ namespace SOTSimulator
             // txtMouseSpeed
             // 
             this.txtMouseSpeed.BackColor = System.Drawing.Color.White;
-            this.txtMouseSpeed.Location = new System.Drawing.Point(390, 87);
+            this.txtMouseSpeed.Location = new System.Drawing.Point(250, 87);
             this.txtMouseSpeed.Name = "txtMouseSpeed";
             this.txtMouseSpeed.Size = new System.Drawing.Size(100, 23);
             this.txtMouseSpeed.TabIndex = 27;
@@ -330,7 +364,7 @@ namespace SOTSimulator
             // txtRunDelay
             // 
             this.txtRunDelay.BackColor = System.Drawing.Color.White;
-            this.txtRunDelay.Location = new System.Drawing.Point(390, 116);
+            this.txtRunDelay.Location = new System.Drawing.Point(250, 116);
             this.txtRunDelay.Name = "txtRunDelay";
             this.txtRunDelay.Size = new System.Drawing.Size(100, 23);
             this.txtRunDelay.TabIndex = 28;
@@ -339,7 +373,7 @@ namespace SOTSimulator
             // txtUseDelay
             // 
             this.txtUseDelay.BackColor = System.Drawing.Color.White;
-            this.txtUseDelay.Location = new System.Drawing.Point(390, 145);
+            this.txtUseDelay.Location = new System.Drawing.Point(250, 145);
             this.txtUseDelay.Name = "txtUseDelay";
             this.txtUseDelay.Size = new System.Drawing.Size(100, 23);
             this.txtUseDelay.TabIndex = 29;
@@ -348,25 +382,16 @@ namespace SOTSimulator
             // txtMouseDistance
             // 
             this.txtMouseDistance.BackColor = System.Drawing.Color.White;
-            this.txtMouseDistance.Location = new System.Drawing.Point(390, 174);
+            this.txtMouseDistance.Location = new System.Drawing.Point(250, 174);
             this.txtMouseDistance.Name = "txtMouseDistance";
             this.txtMouseDistance.Size = new System.Drawing.Size(100, 23);
             this.txtMouseDistance.TabIndex = 30;
             this.txtMouseDistance.Text = "0x11";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(481, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 15);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Double Gun Macro //Todo";
-            // 
             // btnInfoSwordLunge
             // 
             this.btnInfoSwordLunge.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInfoSwordLunge.Location = new System.Drawing.Point(27, 153);
+            this.btnInfoSwordLunge.Location = new System.Drawing.Point(148, 24);
             this.btnInfoSwordLunge.Name = "btnInfoSwordLunge";
             this.btnInfoSwordLunge.Size = new System.Drawing.Size(75, 23);
             this.btnInfoSwordLunge.TabIndex = 32;
@@ -377,7 +402,7 @@ namespace SOTSimulator
             // btnInfoJuggle
             // 
             this.btnInfoJuggle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInfoJuggle.Location = new System.Drawing.Point(217, 182);
+            this.btnInfoJuggle.Location = new System.Drawing.Point(379, 24);
             this.btnInfoJuggle.Name = "btnInfoJuggle";
             this.btnInfoJuggle.Size = new System.Drawing.Size(75, 23);
             this.btnInfoJuggle.TabIndex = 33;
@@ -388,22 +413,395 @@ namespace SOTSimulator
             // lblReference
             // 
             this.lblReference.AutoSize = true;
-            this.lblReference.Location = new System.Drawing.Point(481, 28);
+            this.lblReference.Location = new System.Drawing.Point(508, 14);
             this.lblReference.Name = "lblReference";
             this.lblReference.Size = new System.Drawing.Size(127, 15);
             this.lblReference.TabIndex = 34;
             this.lblReference.Text = "*Lower for better CPUs";
+            // 
+            // btnDoubleGunToggle
+            // 
+            this.btnDoubleGunToggle.BackColor = System.Drawing.Color.LightGray;
+            this.btnDoubleGunToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoubleGunToggle.Location = new System.Drawing.Point(27, 116);
+            this.btnDoubleGunToggle.Name = "btnDoubleGunToggle";
+            this.btnDoubleGunToggle.Size = new System.Drawing.Size(75, 37);
+            this.btnDoubleGunToggle.TabIndex = 35;
+            this.btnDoubleGunToggle.Text = "DG";
+            this.btnDoubleGunToggle.UseVisualStyleBackColor = false;
+            this.btnDoubleGunToggle.Click += new System.EventHandler(this.btnDoubleGunToggle_Click);
+            // 
+            // lblDgState
+            // 
+            this.lblDgState.AutoSize = true;
+            this.lblDgState.ForeColor = System.Drawing.Color.Red;
+            this.lblDgState.Location = new System.Drawing.Point(108, 127);
+            this.lblDgState.Name = "lblDgState";
+            this.lblDgState.Size = new System.Drawing.Size(22, 15);
+            this.lblDgState.TabIndex = 36;
+            this.lblDgState.Text = "off";
+            // 
+            // txtDgKeyStroke
+            // 
+            this.txtDgKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtDgKeyStroke.Location = new System.Drawing.Point(481, 77);
+            this.txtDgKeyStroke.Name = "txtDgKeyStroke";
+            this.txtDgKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtDgKeyStroke.TabIndex = 37;
+            this.txtDgKeyStroke.Text = "0x11";
+            // 
+            // lblDgKeyStroke
+            // 
+            this.lblDgKeyStroke.AutoSize = true;
+            this.lblDgKeyStroke.Location = new System.Drawing.Point(587, 85);
+            this.lblDgKeyStroke.Name = "lblDgKeyStroke";
+            this.lblDgKeyStroke.Size = new System.Drawing.Size(104, 15);
+            this.lblDgKeyStroke.TabIndex = 38;
+            this.lblDgKeyStroke.Text = "DoubleGun toggle";
+            // 
+            // lblSwitchKeyStroke
+            // 
+            this.lblSwitchKeyStroke.AutoSize = true;
+            this.lblSwitchKeyStroke.Location = new System.Drawing.Point(587, 344);
+            this.lblSwitchKeyStroke.Name = "lblSwitchKeyStroke";
+            this.lblSwitchKeyStroke.Size = new System.Drawing.Size(113, 15);
+            this.lblSwitchKeyStroke.TabIndex = 40;
+            this.lblSwitchKeyStroke.Text = "Switch weapons key";
+            // 
+            // txtSwitchKeyStroke
+            // 
+            this.txtSwitchKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtSwitchKeyStroke.Location = new System.Drawing.Point(481, 336);
+            this.txtSwitchKeyStroke.Name = "txtSwitchKeyStroke";
+            this.txtSwitchKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtSwitchKeyStroke.TabIndex = 39;
+            this.txtSwitchKeyStroke.Text = "0x11";
+            // 
+            // txtSwitchDelay
+            // 
+            this.txtSwitchDelay.BackColor = System.Drawing.Color.White;
+            this.txtSwitchDelay.Location = new System.Drawing.Point(27, 159);
+            this.txtSwitchDelay.Name = "txtSwitchDelay";
+            this.txtSwitchDelay.Size = new System.Drawing.Size(100, 23);
+            this.txtSwitchDelay.TabIndex = 42;
+            this.txtSwitchDelay.Text = "0x11";
+            // 
+            // lblSwitchDelay
+            // 
+            this.lblSwitchDelay.AutoSize = true;
+            this.lblSwitchDelay.Location = new System.Drawing.Point(133, 167);
+            this.lblSwitchDelay.Name = "lblSwitchDelay";
+            this.lblSwitchDelay.Size = new System.Drawing.Size(73, 15);
+            this.lblSwitchDelay.TabIndex = 41;
+            this.lblSwitchDelay.Text = "Switch delay";
+            // 
+            // lblFireKeyStroke
+            // 
+            this.lblFireKeyStroke.AutoSize = true;
+            this.lblFireKeyStroke.Location = new System.Drawing.Point(587, 373);
+            this.lblFireKeyStroke.Name = "lblFireKeyStroke";
+            this.lblFireKeyStroke.Size = new System.Drawing.Size(59, 15);
+            this.lblFireKeyStroke.TabIndex = 44;
+            this.lblFireKeyStroke.Text = "Shoot key";
+            // 
+            // txtFireKeyStroke
+            // 
+            this.txtFireKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtFireKeyStroke.Location = new System.Drawing.Point(481, 365);
+            this.txtFireKeyStroke.Name = "txtFireKeyStroke";
+            this.txtFireKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtFireKeyStroke.TabIndex = 43;
+            this.txtFireKeyStroke.Text = "0x11";
+            // 
+            // lblAimKeyStroke
+            // 
+            this.lblAimKeyStroke.AutoSize = true;
+            this.lblAimKeyStroke.Location = new System.Drawing.Point(587, 402);
+            this.lblAimKeyStroke.Name = "lblAimKeyStroke";
+            this.lblAimKeyStroke.Size = new System.Drawing.Size(50, 15);
+            this.lblAimKeyStroke.TabIndex = 46;
+            this.lblAimKeyStroke.Text = "Aim key";
+            // 
+            // txtAimKeyStroke
+            // 
+            this.txtAimKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtAimKeyStroke.Location = new System.Drawing.Point(481, 394);
+            this.txtAimKeyStroke.Name = "txtAimKeyStroke";
+            this.txtAimKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtAimKeyStroke.TabIndex = 45;
+            this.txtAimKeyStroke.Text = "0x11";
+            // 
+            // txtAdsDelay
+            // 
+            this.txtAdsDelay.BackColor = System.Drawing.Color.White;
+            this.txtAdsDelay.Location = new System.Drawing.Point(27, 188);
+            this.txtAdsDelay.Name = "txtAdsDelay";
+            this.txtAdsDelay.Size = new System.Drawing.Size(100, 23);
+            this.txtAdsDelay.TabIndex = 48;
+            this.txtAdsDelay.Text = "0x11";
+            // 
+            // lblAdsDelay
+            // 
+            this.lblAdsDelay.AutoSize = true;
+            this.lblAdsDelay.Location = new System.Drawing.Point(133, 196);
+            this.lblAdsDelay.Name = "lblAdsDelay";
+            this.lblAdsDelay.Size = new System.Drawing.Size(60, 15);
+            this.lblAdsDelay.TabIndex = 47;
+            this.lblAdsDelay.Text = "ADS delay";
+            // 
+            // btnInfoDoubleGun
+            // 
+            this.btnInfoDoubleGun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInfoDoubleGun.Location = new System.Drawing.Point(148, 123);
+            this.btnInfoDoubleGun.Name = "btnInfoDoubleGun";
+            this.btnInfoDoubleGun.Size = new System.Drawing.Size(75, 23);
+            this.btnInfoDoubleGun.TabIndex = 49;
+            this.btnInfoDoubleGun.Text = "Info";
+            this.btnInfoDoubleGun.UseVisualStyleBackColor = true;
+            this.btnInfoDoubleGun.Click += new System.EventHandler(this.btnInfoDoubleGun_Click);
+            // 
+            // lblBhopToggle
+            // 
+            this.lblBhopToggle.AutoSize = true;
+            this.lblBhopToggle.ForeColor = System.Drawing.Color.Red;
+            this.lblBhopToggle.Location = new System.Drawing.Point(331, 214);
+            this.lblBhopToggle.Name = "lblBhopToggle";
+            this.lblBhopToggle.Size = new System.Drawing.Size(22, 15);
+            this.lblBhopToggle.TabIndex = 51;
+            this.lblBhopToggle.Text = "off";
+            // 
+            // btnBhopToggle
+            // 
+            this.btnBhopToggle.BackColor = System.Drawing.Color.LightGray;
+            this.btnBhopToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBhopToggle.Location = new System.Drawing.Point(250, 203);
+            this.btnBhopToggle.Name = "btnBhopToggle";
+            this.btnBhopToggle.Size = new System.Drawing.Size(75, 37);
+            this.btnBhopToggle.TabIndex = 50;
+            this.btnBhopToggle.Text = "Bhop";
+            this.btnBhopToggle.UseVisualStyleBackColor = false;
+            this.btnBhopToggle.Click += new System.EventHandler(this.btnBhopToggle_Click);
+            // 
+            // lblBhopStateKeyStroke
+            // 
+            this.lblBhopStateKeyStroke.AutoSize = true;
+            this.lblBhopStateKeyStroke.Location = new System.Drawing.Point(587, 143);
+            this.lblBhopStateKeyStroke.Name = "lblBhopStateKeyStroke";
+            this.lblBhopStateKeyStroke.Size = new System.Drawing.Size(72, 15);
+            this.lblBhopStateKeyStroke.TabIndex = 53;
+            this.lblBhopStateKeyStroke.Text = "Bhop toggle";
+            // 
+            // txtBhopStateKeyStroke
+            // 
+            this.txtBhopStateKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtBhopStateKeyStroke.Location = new System.Drawing.Point(481, 135);
+            this.txtBhopStateKeyStroke.Name = "txtBhopStateKeyStroke";
+            this.txtBhopStateKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtBhopStateKeyStroke.TabIndex = 52;
+            this.txtBhopStateKeyStroke.Text = "0x11";
+            // 
+            // lblAntiAFKStateToggle
+            // 
+            this.lblAntiAFKStateToggle.AutoSize = true;
+            this.lblAntiAFKStateToggle.ForeColor = System.Drawing.Color.Red;
+            this.lblAntiAFKStateToggle.Location = new System.Drawing.Point(331, 257);
+            this.lblAntiAFKStateToggle.Name = "lblAntiAFKStateToggle";
+            this.lblAntiAFKStateToggle.Size = new System.Drawing.Size(22, 15);
+            this.lblAntiAFKStateToggle.TabIndex = 55;
+            this.lblAntiAFKStateToggle.Text = "off";
+            // 
+            // btnAntiAFKStateToggle
+            // 
+            this.btnAntiAFKStateToggle.BackColor = System.Drawing.Color.LightGray;
+            this.btnAntiAFKStateToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAntiAFKStateToggle.Location = new System.Drawing.Point(250, 246);
+            this.btnAntiAFKStateToggle.Name = "btnAntiAFKStateToggle";
+            this.btnAntiAFKStateToggle.Size = new System.Drawing.Size(75, 37);
+            this.btnAntiAFKStateToggle.TabIndex = 54;
+            this.btnAntiAFKStateToggle.Text = "Anti-AFK";
+            this.btnAntiAFKStateToggle.UseVisualStyleBackColor = false;
+            this.btnAntiAFKStateToggle.Click += new System.EventHandler(this.btnAntiAFKStateToggle_Click);
+            // 
+            // lblAutoCannonStateToggle
+            // 
+            this.lblAutoCannonStateToggle.AutoSize = true;
+            this.lblAutoCannonStateToggle.ForeColor = System.Drawing.Color.Red;
+            this.lblAutoCannonStateToggle.Location = new System.Drawing.Point(133, 229);
+            this.lblAutoCannonStateToggle.Name = "lblAutoCannonStateToggle";
+            this.lblAutoCannonStateToggle.Size = new System.Drawing.Size(22, 15);
+            this.lblAutoCannonStateToggle.TabIndex = 57;
+            this.lblAutoCannonStateToggle.Text = "off";
+            // 
+            // btnAutoCannonStateToggle
+            // 
+            this.btnAutoCannonStateToggle.BackColor = System.Drawing.Color.LightGray;
+            this.btnAutoCannonStateToggle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutoCannonStateToggle.Location = new System.Drawing.Point(27, 218);
+            this.btnAutoCannonStateToggle.Name = "btnAutoCannonStateToggle";
+            this.btnAutoCannonStateToggle.Size = new System.Drawing.Size(100, 37);
+            this.btnAutoCannonStateToggle.TabIndex = 56;
+            this.btnAutoCannonStateToggle.Text = "AutoCannon";
+            this.btnAutoCannonStateToggle.UseVisualStyleBackColor = false;
+            this.btnAutoCannonStateToggle.Click += new System.EventHandler(this.btnAutoCannonStateToggle_Click);
+            // 
+            // txtReloadDelay
+            // 
+            this.txtReloadDelay.BackColor = System.Drawing.Color.White;
+            this.txtReloadDelay.Location = new System.Drawing.Point(27, 261);
+            this.txtReloadDelay.Name = "txtReloadDelay";
+            this.txtReloadDelay.Size = new System.Drawing.Size(100, 23);
+            this.txtReloadDelay.TabIndex = 59;
+            this.txtReloadDelay.Text = "0x11";
+            // 
+            // lblReloadDelay
+            // 
+            this.lblReloadDelay.AutoSize = true;
+            this.lblReloadDelay.Location = new System.Drawing.Point(133, 269);
+            this.lblReloadDelay.Name = "lblReloadDelay";
+            this.lblReloadDelay.Size = new System.Drawing.Size(74, 15);
+            this.lblReloadDelay.TabIndex = 58;
+            this.lblReloadDelay.Text = "Reload delay";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(508, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 15);
+            this.label2.TabIndex = 60;
+            this.label2.Text = "*Also bhop delay";
+            // 
+            // lblReloadKeyStroke
+            // 
+            this.lblReloadKeyStroke.AutoSize = true;
+            this.lblReloadKeyStroke.Location = new System.Drawing.Point(587, 230);
+            this.lblReloadKeyStroke.Name = "lblReloadKeyStroke";
+            this.lblReloadKeyStroke.Size = new System.Drawing.Size(64, 15);
+            this.lblReloadKeyStroke.TabIndex = 62;
+            this.lblReloadKeyStroke.Text = "Reload key";
+            // 
+            // txtReloadKeyStroke
+            // 
+            this.txtReloadKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtReloadKeyStroke.Location = new System.Drawing.Point(481, 222);
+            this.txtReloadKeyStroke.Name = "txtReloadKeyStroke";
+            this.txtReloadKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtReloadKeyStroke.TabIndex = 61;
+            this.txtReloadKeyStroke.Text = "0x11";
+            // 
+            // lblCannonToggleKeyStroke
+            // 
+            this.lblCannonToggleKeyStroke.AutoSize = true;
+            this.lblCannonToggleKeyStroke.Location = new System.Drawing.Point(587, 172);
+            this.lblCannonToggleKeyStroke.Name = "lblCannonToggleKeyStroke";
+            this.lblCannonToggleKeyStroke.Size = new System.Drawing.Size(87, 15);
+            this.lblCannonToggleKeyStroke.TabIndex = 64;
+            this.lblCannonToggleKeyStroke.Text = "Cannon Toggle";
+            // 
+            // txtCannonToggleKeyStroke
+            // 
+            this.txtCannonToggleKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtCannonToggleKeyStroke.Location = new System.Drawing.Point(481, 164);
+            this.txtCannonToggleKeyStroke.Name = "txtCannonToggleKeyStroke";
+            this.txtCannonToggleKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtCannonToggleKeyStroke.TabIndex = 63;
+            this.txtCannonToggleKeyStroke.Text = "0x11";
+            // 
+            // lblAutoLootToggleState
+            // 
+            this.lblAutoLootToggleState.AutoSize = true;
+            this.lblAutoLootToggleState.ForeColor = System.Drawing.Color.Red;
+            this.lblAutoLootToggleState.Location = new System.Drawing.Point(331, 300);
+            this.lblAutoLootToggleState.Name = "lblAutoLootToggleState";
+            this.lblAutoLootToggleState.Size = new System.Drawing.Size(22, 15);
+            this.lblAutoLootToggleState.TabIndex = 66;
+            this.lblAutoLootToggleState.Text = "off";
+            // 
+            // btnAutoLootToggleState
+            // 
+            this.btnAutoLootToggleState.BackColor = System.Drawing.Color.LightGray;
+            this.btnAutoLootToggleState.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutoLootToggleState.Location = new System.Drawing.Point(250, 289);
+            this.btnAutoLootToggleState.Name = "btnAutoLootToggleState";
+            this.btnAutoLootToggleState.Size = new System.Drawing.Size(75, 37);
+            this.btnAutoLootToggleState.TabIndex = 65;
+            this.btnAutoLootToggleState.Text = "Auto Loot";
+            this.btnAutoLootToggleState.UseVisualStyleBackColor = false;
+            this.btnAutoLootToggleState.Click += new System.EventHandler(this.btnAutoLootToggleState_Click);
+            // 
+            // lblLootToggle
+            // 
+            this.lblLootToggle.AutoSize = true;
+            this.lblLootToggle.Location = new System.Drawing.Point(587, 201);
+            this.lblLootToggle.Name = "lblLootToggle";
+            this.lblLootToggle.Size = new System.Drawing.Size(68, 15);
+            this.lblLootToggle.TabIndex = 68;
+            this.lblLootToggle.Text = "Loot toggle";
+            // 
+            // txtAutoLootToggleKeyStroke
+            // 
+            this.txtAutoLootToggleKeyStroke.BackColor = System.Drawing.Color.White;
+            this.txtAutoLootToggleKeyStroke.Location = new System.Drawing.Point(481, 193);
+            this.txtAutoLootToggleKeyStroke.Name = "txtAutoLootToggleKeyStroke";
+            this.txtAutoLootToggleKeyStroke.Size = new System.Drawing.Size(100, 23);
+            this.txtAutoLootToggleKeyStroke.TabIndex = 67;
+            this.txtAutoLootToggleKeyStroke.Text = "0x11";
+            // 
+            // btnDefault
+            // 
+            this.btnDefault.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnDefault.Location = new System.Drawing.Point(250, 402);
+            this.btnDefault.Name = "btnDefault";
+            this.btnDefault.Size = new System.Drawing.Size(133, 23);
+            this.btnDefault.TabIndex = 69;
+            this.btnDefault.Text = "Default values";
+            this.btnDefault.UseVisualStyleBackColor = true;
+            this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(635, 244);
+            this.ClientSize = new System.Drawing.Size(718, 437);
+            this.Controls.Add(this.btnDefault);
+            this.Controls.Add(this.lblLootToggle);
+            this.Controls.Add(this.txtAutoLootToggleKeyStroke);
+            this.Controls.Add(this.lblAutoLootToggleState);
+            this.Controls.Add(this.btnAutoLootToggleState);
+            this.Controls.Add(this.lblCannonToggleKeyStroke);
+            this.Controls.Add(this.txtCannonToggleKeyStroke);
+            this.Controls.Add(this.lblReloadKeyStroke);
+            this.Controls.Add(this.txtReloadKeyStroke);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtReloadDelay);
+            this.Controls.Add(this.lblReloadDelay);
+            this.Controls.Add(this.lblAutoCannonStateToggle);
+            this.Controls.Add(this.btnAutoCannonStateToggle);
+            this.Controls.Add(this.lblAntiAFKStateToggle);
+            this.Controls.Add(this.btnAntiAFKStateToggle);
+            this.Controls.Add(this.lblBhopStateKeyStroke);
+            this.Controls.Add(this.txtBhopStateKeyStroke);
+            this.Controls.Add(this.lblBhopToggle);
+            this.Controls.Add(this.btnBhopToggle);
+            this.Controls.Add(this.btnInfoDoubleGun);
+            this.Controls.Add(this.txtAdsDelay);
+            this.Controls.Add(this.lblAdsDelay);
+            this.Controls.Add(this.lblAimKeyStroke);
+            this.Controls.Add(this.txtAimKeyStroke);
+            this.Controls.Add(this.lblFireKeyStroke);
+            this.Controls.Add(this.txtFireKeyStroke);
+            this.Controls.Add(this.txtSwitchDelay);
+            this.Controls.Add(this.lblSwitchDelay);
+            this.Controls.Add(this.lblSwitchKeyStroke);
+            this.Controls.Add(this.txtSwitchKeyStroke);
+            this.Controls.Add(this.lblDgKeyStroke);
+            this.Controls.Add(this.txtDgKeyStroke);
+            this.Controls.Add(this.lblDgState);
+            this.Controls.Add(this.btnDoubleGunToggle);
             this.Controls.Add(this.lblReference);
             this.Controls.Add(this.btnInfoJuggle);
             this.Controls.Add(this.btnInfoSwordLunge);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMouseDistance);
             this.Controls.Add(this.txtUseDelay);
             this.Controls.Add(this.txtRunDelay);
@@ -475,10 +873,44 @@ namespace SOTSimulator
         private System.Windows.Forms.TextBox txtRunDelay;
         private System.Windows.Forms.TextBox txtUseDelay;
         private System.Windows.Forms.TextBox txtMouseDistance;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnInfoSwordLunge;
         private System.Windows.Forms.Button btnInfoJuggle;
         private System.Windows.Forms.Label lblReference;
+        private System.Windows.Forms.Button btnDoubleGunToggle;
+        private System.Windows.Forms.Label lblDgState;
+        private System.Windows.Forms.TextBox txtDgKeyStroke;
+        private System.Windows.Forms.Label lblDgKeyStroke;
+        private System.Windows.Forms.Label lblSwitchKeyStroke;
+        private System.Windows.Forms.TextBox txtSwitchKeyStroke;
+        private System.Windows.Forms.TextBox txtSwitchDelay;
+        private System.Windows.Forms.Label lblSwitchDelay;
+        private System.Windows.Forms.Label lblFireKeyStroke;
+        private System.Windows.Forms.TextBox txtFireKeyStroke;
+        private System.Windows.Forms.Label lblAimKeyStroke;
+        private System.Windows.Forms.TextBox txtAimKeyStroke;
+        private System.Windows.Forms.TextBox txtAdsDelay;
+        private System.Windows.Forms.Label lblAdsDelay;
+        private System.Windows.Forms.Button btnInfoDoubleGun;
+        private System.Windows.Forms.Label lblBhopToggle;
+        private System.Windows.Forms.Button btnBhopToggle;
+        private System.Windows.Forms.Label lblBhopStateKeyStroke;
+        private System.Windows.Forms.TextBox txtBhopStateKeyStroke;
+        private System.Windows.Forms.Label lblAntiAFKStateToggle;
+        private System.Windows.Forms.Button btnAntiAFKStateToggle;
+        private System.Windows.Forms.Label lblAutoCannonStateToggle;
+        private System.Windows.Forms.Button btnAutoCannonStateToggle;
+        private System.Windows.Forms.TextBox txtReloadDelay;
+        private System.Windows.Forms.Label lblReloadDelay;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblReloadKeyStroke;
+        private System.Windows.Forms.TextBox txtReloadKeyStroke;
+        private System.Windows.Forms.Label lblCannonToggleKeyStroke;
+        private System.Windows.Forms.TextBox txtCannonToggleKeyStroke;
+        private System.Windows.Forms.Label lblAutoLootToggleState;
+        private System.Windows.Forms.Button btnAutoLootToggleState;
+        private System.Windows.Forms.Label lblLootToggle;
+        private System.Windows.Forms.TextBox txtAutoLootToggleKeyStroke;
+        private System.Windows.Forms.Button btnDefault;
     }
 }
 
